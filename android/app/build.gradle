@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.akavrt.reddit.test"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        vectorDrawables.useSupportLibrary = true
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.7'
+
+    compile rootProject.dependency_appcompat_v7
+    compile rootProject.dependency_recyclerview_v7
+    compile rootProject.dependency_cardview_v7
+
+    compile rootProject.dependency_support_lifecycle_runtime
+    compile rootProject.dependency_support_lifecycle_extensions
+    annotationProcessor rootProject.dependency_support_lifecycle_compiler
+
+    compile rootProject.dependency_glide
+
+    compile rootProject.dependency_rxjava
+    compile rootProject.dependency_rxandroid
+
+    compile rootProject.dependency_okhttp
+    compile rootProject.dependency_logging_interceptor
+
+    compile 'com.github.franmontiel:PersistentCookieJar:v0.9.3'
+
+    compile rootProject.dependency_retrofit
+    compile rootProject.dependency_converter_gson
+    compile rootProject.dependency_adapter_rxjava
+
+    annotationProcessor rootProject.dependency_dagger_compiler
+    compile rootProject.dependency_dagger
+    provided 'javax.annotation:jsr250-api:1.0'
+}

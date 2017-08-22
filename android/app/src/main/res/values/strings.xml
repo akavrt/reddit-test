@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reddit\'s top</string>
+    <string name="ago">ago</string>
+
+    <string name="error_message">Something went wrong.</string>
+    <string name="error_retry">Retry</string>
+    <string name="empty_message">Nothing to show.</string>
+    <string name="load_next_error_message">Something went wrong.</string>
+
+    <plurals name="comments">
+        <item quantity="one">comment</item>
+        <item quantity="other">comments</item>
+    </plurals>
+
+    <plurals name="seconds">
+        <item quantity="one">seconds</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+
+    <plurals name="minutes">
+        <item quantity="one">minute</item>
+        <item quantity="other">minutes</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="one">hour</item>
+        <item quantity="other">hours</item>
+    </plurals>
+
+    <plurals name="days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+
+</resources>

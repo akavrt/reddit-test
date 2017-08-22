@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_half">8dp</dimen>
+    <dimen name="padding_quarter">4dp</dimen>
+    <dimen name="padding_one_and_half">24dp</dimen>
+    <dimen name="padding_double">32dp</dimen>
+    <dimen name="padding_triple">48dp</dimen>
+
+    <dimen name="text_size_display_3">56sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subhead">16sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+
+    <dimen name="recycler_view_content_max_width">480dp</dimen>
+    <dimen name="recycler_view_min_side_padding">0dp</dimen>
+    <dimen name="image_preview_height">300dp</dimen>
+    <dimen name="item_spacing">@dimen/padding_half</dimen>
+
+</resources>

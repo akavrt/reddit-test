@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="recycler_view_content_max_width">720dp</dimen>
+    <dimen name="recycler_view_min_side_padding">@dimen/padding</dimen>
+    <dimen name="image_preview_height">450dp</dimen>
+    <dimen name="item_spacing">@dimen/padding</dimen>
+
+</resources>
