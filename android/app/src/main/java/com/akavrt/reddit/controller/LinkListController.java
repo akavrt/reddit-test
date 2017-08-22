@@ -1,6 +1,6 @@
 package com.akavrt.reddit.controller;
 
-import com.akavrt.reddit.data.LinkListProvider;
+import com.akavrt.reddit.data.TopLinksProvider;
 import com.akavrt.reddit.models.Link;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import rx.schedulers.Schedulers;
 public class LinkListController extends BaseController<ItemListView<Link>> {
     private static final int MAX_DATA_SIZE = 50;
 
-    private final LinkListProvider dataProvider;
+    private final TopLinksProvider dataProvider;
 
     private List<Link> data;
     private Throwable forwardError;
@@ -27,7 +27,7 @@ public class LinkListController extends BaseController<ItemListView<Link>> {
     private boolean isDataSet;
 
 
-    public LinkListController(LinkListProvider dataProvider) {
+    public LinkListController(TopLinksProvider dataProvider) {
         this.dataProvider = dataProvider;
     }
 

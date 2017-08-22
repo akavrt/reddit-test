@@ -1,9 +1,9 @@
 package com.akavrt.reddit.dagger;
 
 import com.akavrt.reddit.api.RedditApiService;
-import com.akavrt.reddit.data.DefaultLinkListProvider;
+import com.akavrt.reddit.data.DefaultTopLinksProvider;
 import com.akavrt.reddit.controller.LinkListController;
-import com.akavrt.reddit.data.LinkListProvider;
+import com.akavrt.reddit.data.TopLinksProvider;
 
 import dagger.Module;
 import dagger.Provides;
@@ -13,12 +13,12 @@ import dagger.Provides;
 public class DataModule {
 
     @Provides
-    LinkListProvider linkListProvider(RedditApiService apiService) {
-        return new DefaultLinkListProvider(apiService);
+    TopLinksProvider linkListProvider(RedditApiService apiService) {
+        return new DefaultTopLinksProvider(apiService);
     }
 
     @Provides
-    LinkListController linkListController(LinkListProvider linkListProvider) {
+    LinkListController linkListController(TopLinksProvider linkListProvider) {
         return new LinkListController(linkListProvider);
     }
 }

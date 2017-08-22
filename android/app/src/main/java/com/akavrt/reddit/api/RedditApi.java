@@ -9,7 +9,7 @@ import rx.Observable;
 public interface RedditApi {
 
     @GET("top/.json")
-    Observable<RawListing> topItems(@Query("after") String after, @Query("limit") int limit,
+    Observable<RawListing> topLinks(@Query("after") String after, @Query("limit") int limit,
                                     @Query("raw_json") int rawJson);
 
 }

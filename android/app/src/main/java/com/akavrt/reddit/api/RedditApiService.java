@@ -7,5 +7,5 @@ import java.util.List;
 import rx.Observable;
 
 public interface RedditApiService {
-    Observable<List<Link>> getTopItems(String after, int limit);
+    Observable<List<Link>> getTopLinks(String after, int limit);
 }

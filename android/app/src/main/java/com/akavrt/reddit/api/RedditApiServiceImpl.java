@@ -31,8 +31,8 @@ public class RedditApiServiceImpl implements RedditApiService {
     }
 
     @Override
-    public Observable<List<Link>> getTopItems(String after, int limit) {
-        return api.topItems(after, limit, 1)
+    public Observable<List<Link>> getTopLinks(String after, int limit) {
+        return api.topLinks(after, limit, 1)
                 .map(new Func1<RawListing, List<Link>>() {
 
                     @Override
