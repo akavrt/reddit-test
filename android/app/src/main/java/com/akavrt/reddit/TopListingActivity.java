@@ -150,6 +150,7 @@ public class TopListingActivity extends AppCompatActivity implements ItemListVie
 
     private void setupToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.listing_title);
         setSupportActionBar(toolbar);
 
         toolbar.setOnClickListener(new View.OnClickListener() {

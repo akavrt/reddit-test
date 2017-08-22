@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Reddit\'s top</string>
+    <string name="listing_title">Reddit\'s top scoring links</string>
     <string name="ago">ago</string>
 
     <string name="error_message">Something went wrong.</string>
